@@ -17,8 +17,8 @@ Projeto da Semana OmniStack da RocketSeat.
 - [x] Instalar o express e fazer o app rodar na porta 3333 (localhost);
 - [x] Vincular o projeto ao mongoDB (com mongoose, pelo atlas);
 - [ ] Criar a estrutura do projeto:
-  - Pasta src com routes.js;
-  - Pasta models; 
+- Pasta src com routes.js;
+- Pasta models; 
 
 ## Dia 3: Frontend
 ### Construindo a interface web
