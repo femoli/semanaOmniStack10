@@ -14,11 +14,15 @@ Projeto da Semana OmniStack da RocketSeat.
 ## Dia 2: Backend 
 ### Criando a base da aplicação
 
-- [x] Instalar o express e fazer o app rodar na porta 3333 (localhost);
-- [x] Vincular o projeto ao mongoDB (com mongoose, pelo atlas);
-- [ ] Criar a estrutura do projeto:
+- [x] Instalar o express, mongoose e axios;
+- [x] Vincular o projeto ao mongoDB-Atlas;
+- [x] Criar a estrutura do projeto:
 - Pasta src com routes.js;
 - Pasta models; 
+- [] Vincular o projeto a API do GitHub
+Através do perfil no git:
+ - Cadastrar os desenvolvedores na plataforma
+ - Trazer a bio e foto para o perfil
 
 ## Dia 3: Frontend
 ### Construindo a interface web
