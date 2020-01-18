@@ -19,10 +19,7 @@ Projeto da Semana OmniStack da RocketSeat.
 - [x] Criar a estrutura do projeto:
 - Pasta src com routes.js;
 - Pasta models; 
-- [] Vincular o projeto a API do GitHub
-Através do perfil no git:
- - Cadastrar os desenvolvedores na plataforma
- - Trazer a bio e foto para o perfil
+- [x] Vincular o projeto a API do GitHub;
 
 ## Dia 3: Frontend
 ### Construindo a interface web
