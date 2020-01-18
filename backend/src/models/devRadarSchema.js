@@ -10,4 +10,4 @@ const devSchema = new mongoose.Schema({
     bio: String,    
 });
 
-module.exports = mongoose.model ("devsSchema", devSchema);
+module.exports = mongoose.model("devRadarSchema", devSchema);
