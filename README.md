@@ -20,6 +20,11 @@ Projeto da Semana OmniStack da RocketSeat.
 - Pasta src com routes.js;
 - Pasta models; 
 - [x] Vincular o projeto a API do GitHub;
+- [ ] Fazer um CRUD:
+- Get: index, ver todos os devs cadastrados;
+- Post: criar um dev;
+- Patch: atualizar um dev;
+- Delete: deletar todos os devs :(
 
 ## Dia 3: Frontend
 ### Construindo a interface web
