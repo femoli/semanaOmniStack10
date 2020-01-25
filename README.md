@@ -23,6 +23,7 @@ Projeto da Semana OmniStack da RocketSeat.
 - [x] Adicionar geolocalização; 
 - [x] Adicionar rotas GET: procurar devs por localização/tecnologias;
 - [x] Adicionar rota POST: cadastrar um dev;
+
 -Extras:
 - [ ] Patch: atualizar o cadastro de um dev;
 - [ ] Delete: deletar o cadastro de um dev :(
