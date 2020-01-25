@@ -1,6 +1,7 @@
 //controller: recebe a requisição -> responde
 const axios = require("axios");
 const developer = require("../models/devRadarSchema");
+const parseStringAsArray = require("../utils/parseStringAsArray");
 
 module.exports = {
     //async - para aguardar a api do git responder
@@ -13,7 +14,7 @@ module.exports = {
             //await - primeiro ele verifica aqui, antes de mandar a resposta
             const apiGitResponse = await axios.get(`https://api.github.com/users/${github_username}`);
             const { name = login, avatar_url, bio } = apiGitResponse.data;
-            const techsArray = techs.split(",").map(tech => tech.trim());
+            const techsArray = parseStringAsArray(techs);
             const location = {
                 type: "Point",
                 coordinates: [longitude, latitude]
