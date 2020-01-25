@@ -25,6 +25,7 @@ Projeto da Semana OmniStack da RocketSeat.
 - Post: criar um dev;
 - Patch: atualizar um dev;
 - Delete: deletar todos os devs :(
+- [x] Adicionar geolocalização; 
 
 ## Dia 3: Frontend
 ### Construindo a interface web
