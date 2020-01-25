@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const pointSchema = require("./utilities/pointSchema");
+const pointSchema = require("../utils/pointSchema");
 
 //estrutura da entidade no banco de dados
 const developerSchema = new mongoose.Schema({

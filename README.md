@@ -22,8 +22,8 @@ Projeto da Semana OmniStack da RocketSeat.
 - [x] Vincular o projeto a API do GitHub;
 - [x] Adicionar geolocalização; 
 - [ ] Fazer um CRUD:
-- Get: index, ver todos os devs cadastrados;
-- Post: criar um dev;
+- Get: listar todos os devs, procurar devs;
+- Post: cadastrar um dev;
 - Patch: atualizar um dev;
 - Delete: deletar um dev :(
 
