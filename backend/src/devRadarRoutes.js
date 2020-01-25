@@ -1,7 +1,9 @@
-const { Router } = require("express"); //{ } => chama exclusivamente o método Router dentro do express 
-const axios = require("axios");
-const routes = Router(); //Router() chama os métodos http / criação das rotas 
-const developer = require("./models/devRadarSchema");
+//{ } => chama exclusivamente o método Router dentro do express
+const { Router } = require("express");  
+const devRadarControllers = require("./controllers/devRadarControllers");
+//Router() chama os métodos http / criação das rotas
+const routes = Router(); 
+  
 
 //get-routes
 routes.get("/", (request, response) => {
@@ -9,26 +11,6 @@ routes.get("/", (request, response) => {
 });
 
 //post-routes
-routes.post("/developers", async (request, response) => { //async - para aguardar a api do git responder 
-    const { github_username, techs, longitude, latitude } = (request.body); //cadastrar o dev pelos dados do git
-    const apiGitResponse = await axios.get(`https://api.github.com/users/${github_username}`); //await - primeiro ele verifica aqui, antes de mandar a resposta
-    const { name = login, avatar_url, bio } = apiGitResponse.data;
-    const techsArray = techs.split(",").map(tech => tech.trim());
-    const location = {
-        type: "Point",
-        coordinates: [longitude, latitude]
-    };    
-    const devRegister = await developer.create({
-        github_username,
-        name,
-        avatar_url,
-        bio,
-        techs: techsArray,
-        location,
-    });
-    //console.log(devRegister);
-    //console.log(name, avatar_url, bio, github_username, techs);
-    return response.json(devRegister);
-});
+routes.post("/developers", devRadarControllers.store);
 
-module.exports = routes;
+module.exports = routes; 
