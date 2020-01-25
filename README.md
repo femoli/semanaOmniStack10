@@ -21,11 +21,11 @@ Projeto da Semana OmniStack da RocketSeat.
 - Pasta models; 
 - [x] Vincular o projeto a API do GitHub;
 - [x] Adicionar geolocalização; 
-- [ ] Fazer um CRUD:
-- Get: listar todos os devs, procurar devs;
-- Post: cadastrar um dev;
-- Patch: atualizar um dev;
-- Delete: deletar um dev :(
+- [x] Adicionar rotas GET: procurar devs por localização/tecnologias;
+- [x] Adicionar rota POST: cadastrar um dev;
+-Extras:
+- [ ] Patch: atualizar o cadastro de um dev;
+- [ ] Delete: deletar o cadastro de um dev :(
 
 ## Dia 3: Frontend
 ### Construindo a interface web
